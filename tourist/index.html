@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourist Places | Salsa's Personal Website</title>
+<meta name="description" content="A guide to tourist attractions in Surabaya, Indonesia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="../" class="brand"><span class="brand-mark"></span> Salsa</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../profile/">Profile</a></li>
+      <li><a href="../hometown/">Hometown</a></li>
+      <li><a href="../food/">Local Food</a></li>
+      <li><a href="./">Tourist Places</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5l1.5 1.5M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-kicker">Tourist Places</span>
+      <h1>Places to Visit in Surabaya</h1>
+      <p class="lead">From historic monuments to seaside parks, here are some spots worth putting on your itinerary, filter by type below.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="filter-row" data-target="#place-grid">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="historical">Historical</button>
+        <button class="filter-btn" data-filter="nature">Nature &amp; Family</button>
+        <button class="filter-btn" data-filter="landmark">Landmark</button>
+      </div>
+
+      <div class="grid" id="place-grid">
+        <div class="media-card" data-category="historical">
+          <div class="media"><img src="../assets/img/tourist-place/tugupahlawan.png" alt="Tugu Pahlawan, the Heroes' Monument"></div>
+          <div class="body">
+            <span class="tag">Historical</span>
+            <h3>Tugu Pahlawan</h3>
+            <p>The Heroes' Monument, an 41-meter obelisk commemorating the Battle of Surabaya in 1945. An underground museum beneath it tells the story of the independence struggle.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="historical">
+          <div class="media"><img src="../assets/img/tourist-place/houseofsampoerna.png" alt="House of Sampoerna, colonial-era building and museum"></div>
+          <div class="body">
+            <span class="tag">Historical</span>
+            <h3>House of Sampoerna</h3>
+            <p>A Dutch colonial-era building turned museum and working cigarette factory, showcasing the history of the Sampoerna family and traditional hand-rolled kretek production.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="historical">
+          <div class="media"><img src="../assets/img/tourist-place/monkasel.png" alt="Monumen Kapal Selam, submarine museum"></div>
+          <div class="body">
+            <span class="tag">Historical</span>
+            <h3>Monumen Kapal Selam (Monkasel)</h3>
+            <p>A real decommissioned Indonesian Navy submarine (KRI Pasopati) turned into a walk-through museum in the middle of the city, a favorite for a quick, unusual outing.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="nature">
+          <div class="media"><img src="../assets/img/tourist-place/kenjeran.png" alt="Pantai Kenjeran, coastal recreation area"></div>
+          <div class="body">
+            <span class="tag">Nature &amp; Family</span>
+            <h3>Pantai Kenjeran (Kenjeran Beach)</h3>
+            <p>A coastal recreation area with a beach, seafood stalls, and the striking red Kenjeran Bridge nearby, a relaxed spot to watch the sunset over the Madura Strait.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="nature">
+          <div class="media"><img src="../assets/img/tourist-place/surabayazoo.png" alt="Surabaya Zoo (KBS)"></div>
+          <div class="body">
+            <span class="tag">Nature &amp; Family</span>
+            <h3>Surabaya Zoo (KBS)</h3>
+            <p>One of the oldest and largest zoos in Southeast Asia, home to hundreds of species, a classic family destination in the middle of the city.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="nature">
+          <div class="media"><img src="../assets/img/tourist-place/tamanbungkul.png" alt="Taman Bungkul, city park"></div>
+          <div class="body">
+            <span class="tag">Nature &amp; Family</span>
+            <h3>Taman Bungkul</h3>
+            <p>A lively city park popular for jogging, skateboarding, street food, and weekend gatherings, often cited as one of the best-managed public parks in Asia.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="landmark">
+          <div class="media"><img src="../assets/img/tourist-place/suramadu.png" alt="Jembatan Suramadu, Suramadu Bridge"></div>
+          <div class="body">
+            <span class="tag">Landmark</span>
+            <h3>Jembatan Suramadu</h3>
+            <p>Indonesia's longest bridge, connecting Surabaya to Madura Island across the strait, an impressive feat of engineering and a scenic drive, especially at night.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; <span class="current-year">2026</span> Salsabila Hana Adniah. Personal website built with HTML, CSS &amp; JavaScript.</span>
+    <span><a href="https://github.com/" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

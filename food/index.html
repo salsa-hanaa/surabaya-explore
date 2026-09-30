@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Food | Salsa's Personal Website</title>
+<meta name="description" content="Signature local food from Surabaya, Indonesia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="../" class="brand"><span class="brand-mark"></span> Salsa</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../profile/">Profile</a></li>
+      <li><a href="../hometown/">Hometown</a></li>
+      <li><a href="./">Local Food</a></li>
+      <li><a href="../tourist/">Tourist Places</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5l1.5 1.5M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-kicker">Local Food</span>
+      <h1>Tastes of Surabaya</h1>
+      <p class="lead">Surabaya's food scene is bold, savory, and full of character. Here are a few dishes that define it, filter by type below.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="filter-row" data-target="#food-grid">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="soup">Soup</button>
+        <button class="filter-btn" data-filter="salad">Salad</button>
+        <button class="filter-btn" data-filter="grilled">Grilled</button>
+        <button class="filter-btn" data-filter="snack">Snack</button>
+      </div>
+
+      <div class="grid" id="food-grid">
+        <div class="media-card" data-category="soup">
+          <div class="media"><img src="../assets/img/localfood/rawon.png" alt="Rawon, dark spiced beef soup"></div>
+          <div class="body">
+            <span class="tag">Soup</span>
+            <h3>Rawon</h3>
+            <p>A dark, richly spiced beef soup colored by keluak (black nut), served with rice, bean sprouts, and salted egg. One of Surabaya's most iconic dishes.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="salad">
+          <div class="media"><img src="../assets/img/localfood/rujakcingur.png" alt="Rujak Cingur, mixed salad with beef snout"></div>
+          <div class="body">
+            <span class="tag">Salad</span>
+            <h3>Rujak Cingur</h3>
+            <p>A distinctive mixed salad of vegetables, fruit, tofu, tempeh, and cingur (beef snout), tossed in a thick, pungent peanut-petis (shrimp paste) sauce.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="soup">
+          <div class="media"><img src="../assets/img/localfood/lontongbalap.png" alt="Lontong Balap, rice cakes in savory broth"></div>
+          <div class="body">
+            <span class="tag">Soup</span>
+            <h3>Lontong Balap</h3>
+            <p>Rice cakes (lontong) with bean sprouts, fried tofu, and lentho (bean fritters), served in a light savory broth and topped with petis and fried shallots.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="grilled">
+          <div class="media"><img src="../assets/img/localfood/sateklopo.png" alt="Sate Klopo, satay coated in grated coconut"></div>
+          <div class="body">
+            <span class="tag">Grilled</span>
+            <h3>Sate Klopo</h3>
+            <p>Satay coated in seasoned grated coconut before grilling, giving it a smoky, nutty flavor that's different from typical Indonesian satay.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="salad">
+          <div class="media"><img src="../assets/img/localfood/semanggi.png" alt="Semanggi Suroboyo, clover-leaf salad"></div>
+          <div class="body">
+            <span class="tag">Salad</span>
+            <h3>Semanggi Suroboyo</h3>
+            <p>A traditional salad made from clover-leaf (semanggi) shoots, bean sprouts, and a sweet-spicy peanut-sweet potato sauce, sold with a distinctive squatting street-vendor style.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="snack">
+          <div class="media"><img src="../assets/img/localfood/tahutek.png" alt="Tahu Tek, fried and boiled tofu with peanut-petis sauce"></div>
+          <div class="body">
+            <span class="tag">Snack</span>
+            <h3>Tahu Tek</h3>
+            <p>Fried and boiled tofu with lontong and potato fritters, doused in a sweet-savory peanut-petis sauce and topped with crackers.</p>
+          </div>
+        </div>
+        <div class="media-card" data-category="soup">
+          <div class="media"><img src="../assets/img/localfood/lontongkupang.png" alt="Lontong Kupang, tiny clam-like shellfish with lontong"></div>
+          <div class="body">
+            <span class="tag">Soup</span>
+            <h3>Lontong Kupang</h3>
+            <p>Tiny clam-like shellfish (kupang) served with lontong in a savory broth, traditionally eaten with a spicy lontong satay stick called sate kerang on the side.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; <span class="current-year">2026</span> Salsabila Hana Adniah. Personal website built with HTML, CSS &amp; JavaScript.</span>
+    <span><a href="https://github.com/" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

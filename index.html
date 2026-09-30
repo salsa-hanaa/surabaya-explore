@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Salsa's Personal Website</title>
+<meta name="description" content="Personal website of Salsabila Hana Adniah, profile, hometown Surabaya, local food, and tourist attractions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="./" class="brand"><span class="brand-mark"></span> Salsa</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="./">Home</a></li>
+      <li><a href="profile/">Profile</a></li>
+      <li><a href="hometown/">Hometown</a></li>
+      <li><a href="food/">Local Food</a></li>
+      <li><a href="tourist/">Tourist Places</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5l1.5 1.5M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="hero-kicker">Personal Website</span>
+      <h1>Hi, I'm Salsabila Hana Adniah, welcome to my personal website.</h1>
+      <p class="lead">A small static site built with HTML, CSS &amp; JavaScript, sharing a bit about myself and my hometown, Surabaya, its story, its food, and the places worth visiting.</p>
+      <div class="btn-row">
+        <a href="profile/" class="btn btn-primary">View My Profile</a>
+        <a href="hometown/" class="btn btn-ghost">Explore Surabaya</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>What you'll find here</h2>
+        <p>Four short stops that make up this site.</p>
+      </div>
+      <div class="grid">
+        <a href="profile/" class="media-card" style="text-decoration:none;">
+          <div class="media"><img src="assets/img/home/profile.JPG" alt="Photo of Salsa"></div>
+          <div class="body">
+            <h3>Profile</h3>
+            <p>Who I am, what I study, and what I'm interested in.</p>
+          </div>
+        </a>
+        <a href="hometown/" class="media-card" style="text-decoration:none;">
+          <div class="media"><img src="assets/img/home/surabaya.png" alt="Illustration of Surabaya"></div>
+          <div class="body">
+            <h3>Hometown</h3>
+            <p>A short introduction to Surabaya, the City of Heroes.</p>
+          </div>
+        </a>
+        <a href="food/" class="media-card" style="text-decoration:none;">
+          <div class="media"><img src="assets/img/home/food.png" alt="Local food of Surabaya"></div>
+          <div class="body">
+            <h3>Local Food</h3>
+            <p>Signature dishes that define Surabaya's food scene.</p>
+          </div>
+        </a>
+        <a href="tourist/" class="media-card" style="text-decoration:none;">
+          <div class="media"><img src="assets/img/home/place.png" alt="Tourist places in Surabaya"></div>
+          <div class="body">
+            <h3>Tourist Places</h3>
+            <p>Landmarks and spots worth visiting around the city.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>&copy; <span class="current-year">2026</span> Salsabila Hana Adniah. Personal website built with HTML, CSS &amp; JavaScript.</span>
+    <span><a href="https://github.com/" target="_blank" rel="noopener">Source on GitHub</a></span>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
